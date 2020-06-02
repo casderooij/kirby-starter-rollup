@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+	font-size: 135%;
+	@screen md {
+		font-size: 125%;
+	}
+	@screen xl {
+		font-size: 135%;
+	}
+}

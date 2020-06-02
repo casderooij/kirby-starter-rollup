@@ -1,0 +1,31 @@
+{
+  "name": "kirby-starter",
+  "version": "1.0.0",
+  "description": "Kirby project starter",
+  "author": "casderooij <hello@casderooij.nl>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development rollup --config rollup.config.js --watch",
+    "build": "cross-env NODE_ENV=production rollup --config rollup.config.js"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.2.0",
+    "@lopatnov/rollup-plugin-uglify": "^1.2.1",
+    "@rollup/plugin-babel": "^5.0.2",
+    "@rollup/plugin-commonjs": "^12.0.0",
+    "@rollup/plugin-node-resolve": "^8.0.0",
+    "autoprefixer": "^9.8.0",
+    "cssnano": "^4.1.10",
+    "rollup": "^2.12.0",
+    "rollup-plugin-browsersync": "^1.1.0",
+    "rollup-plugin-postcss": "^3.1.1",
+    "sass": "^1.26.7",
+    "tailwindcss": "^1.4.6",
+    "terser": "^4.7.0"
+  },
+  "dependencies": {
+    "@babel/core": "^7.10.2",
+    "cross-env": "^7.0.2",
+    "d3": "^5.16.0"
+  }
+}
