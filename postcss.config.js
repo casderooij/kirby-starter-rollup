@@ -1,5 +1,7 @@
 const tailwindcss = require('tailwindcss');
 
+const production = !process.env.ROLLUP_WATCH;
+
 const purgecss = require('@fullhuman/postcss-purgecss')({
   content: [
     './htdocs/site/templates/*.php',
@@ -22,8 +24,7 @@ module.exports = {
   plugins: [
     tailwindcss('./tailwind.config.js'),
     require('autoprefixer'),
-    ...process.env.NODE_ENV === 'production'
-    ? [purgecss, cssnano]
-    : []
+    production && purgecss,
+    production && cssnano
   ],
 };
