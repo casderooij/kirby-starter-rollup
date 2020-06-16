@@ -1,6 +1,8 @@
 # You might wanna uncomment this
 # /content
 
+/public/assets/*
+
 # Kirby source
 /kirby/
 /vendor/
